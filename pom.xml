@@ -7,7 +7,7 @@
     <version>2.10.1</version>
   </parent>
   <groupId>com.fasterxml.jackson.dataformat</groupId>
-  <artifactId>jackson-dataformat-xml</artifactId>
+  <artifactId>jackson-dataformat-xml-force-stox</artifactId>
   <version>2.10.1</version>
   <name>Jackson-dataformat-XML</name>
   <packaging>bundle</packaging>

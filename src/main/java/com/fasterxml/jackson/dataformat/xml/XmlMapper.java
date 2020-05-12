@@ -7,6 +7,7 @@ import javax.xml.stream.XMLOutputFactory;
 import javax.xml.stream.XMLStreamReader;
 import javax.xml.stream.XMLStreamWriter;
 
+import com.ctc.wstx.stax.WstxInputFactory;
 import com.fasterxml.jackson.core.*;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.*;
@@ -119,7 +120,8 @@ public class XmlMapper extends ObjectMapper
      */
 
     public XmlMapper() {
-        this(new XmlFactory());
+        //force the use of the woodstox parser
+        this( new WstxInputFactory() );
     }
 
     /**

@@ -1,3 +1,7 @@
+# Important Custom Branch Changes
+
+This project was forked with a patch applied specifically to `XmlMapper` so the default constructor of XmlMapper() provides a direct link to woodstox-core-6.0.2 [javax.xml.stream.XMLInputFactory](https://docs.oracle.com/javase/8/docs/api/javax/xml/stream/XMLInputFactory.html) instead of loading through a ServiceProvider of a polluted classpath. The Azure Java SDK uses Jackson 2.10.1, and the [JacksonAdapter](https://github.com/Azure/azure-sdk-for-java/blob/master/sdk/core/azure-core/src/main/java/com/azure/core/util/serializer/JacksonAdapter.java#L68).
+
 # Overview
 
 This projects contains [Jackson](http://wiki.fasterxml.com/JacksonHome) extension component for
